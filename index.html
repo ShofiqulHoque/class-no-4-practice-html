@@ -1,0 +1,247 @@
+<!doctype html>
+	<html lang = eng>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title> Abbout Us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+		<body>
+
+			<h1> Hellow Word </h1>
+			
+<img src="images/fruit-tinypng.jpg" alt="bedana" width="400" height="">
+
+<!--target value "_self" is default and it open in same page but target value  "_blank" open in newpage-->
+<a href="mission.html" target="_self"> Our Mission </a>
+<a href="pages/content.html" target="_blank">Content</a>
+
+<p> lorem ipsum <strong> is begining</strong>  free text</p>
+<p> lorem ipsum <b>is begining</b>  free text </p>
+
+<abbr title="World Health Organization"> WHO </abbr>
+
+<audio controls="">
+	<source src="audio/chick.mp3" type="audio/mp3">
+		your browser does not support the audio type
+</audio>
+
+
+<form>
+	<input type="text" required="required">
+	<button type="submit">submit</button>
+	<input type="number" disabled="">
+	<button type="submit">submit</button>
+</form>
+
+<h1>The canvas element</h1>
+
+<canvas id="myCanvas">
+Your browser does not support the canvas tag.
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "red";
+ctx.fillRect(20, 20, 75, 50);
+
+</script>
+
+
+<h1>The Table caption element</h1>
+<head>
+<style>
+table, th, td {
+  border: 1px solid blue;
+}
+</style>
+</head>
+<body>
+
+<table>
+	<colgroup>
+    <col span="2" style="background-color:seagreen;">
+    <col style="background-color:deepskyblue;">
+  </colgroup>
+  <caption>Monthly savings</caption>
+  <tr>
+  	<th>Month</th>
+    <th>Employee</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+  	<td>January</td>
+    <td>Rahim</td>
+    <td>Tk10</td>
+  </tr>
+  <tr>
+  	<td>January</td>
+    <td>Karim</td>
+    <td>Tk50</td>
+  </tr>
+  <td>January</td>
+  <td>Jabbar</td>
+  <td>Tk85</td>
+</table>
+
+
+<h1>The datalist element</h1>
+<form action="/action_page.php" method="get">
+  <label for="district">Choose your district from the list:</label>
+  <input list="districts" name="district" id="district">
+  <datalist id="districts">
+    <option value="dhaka">
+    <option value="ctg">
+    <option value="khulna">
+    <option value="raj">
+    <option value="Sylhet">
+  </datalist>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The datalist tag is not supported in Safari 12.0 (or earlier).</p>
+
+<h1>The em element</h1>
+<p>You <em>have</em> to hurry up!</p>
+<p>We <em>cannot</em> live like this.</p>
+
+
+<h1>The hr (horizantal rule) link</h1>
+
+<p>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page, and consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+
+<hr>
+<p>CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work, because it can control the layout of multiple web pages all at once.</p>
+<hr>
+
+<p>JavaScript is the programming language of HTML and the Web. JavaScript can change HTML content and attribute values. JavaScript can change CSS. JavaScript can hide and show HTML elements, and more.</p>
+
+
+<h1>The input element</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+
+
+<h1>The label element</h1>
+<p>Click on one of the text labels to toggle the related radio button:</p>
+<form action="/action_page.php">
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+<label for="javascript">JavaScript</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<h1>The ol(ordered list) and ul (un ordered list) elements</h1>
+<p>The ol element defines an ordered list:</p>
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<p>The ul element defines an unordered list:</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<h1>The mark element</h1>
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+
+<h1>The meter element</h1>
+<p>The meter element is used to display a gauge:</p>
+<label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="8" min="0" max="10">8 out of 10</meter><br>
+<label for="disk_d">Disk usage D:</label>
+<meter id="disk_d" value="0.3">30%</meter>
+
+<p><strong>Note:</strong> The meter tag is not supported in Edge 12 (or earlier).</p>
+
+
+<h1>The nav element</h1>
+<p>The nav element defines a set of navigation links:</p>
+<nav>
+<a href="/html/">HTML</a> |
+<a href="/css/">CSS</a> |
+<a href="/js/">JavaScript</a> |
+<a href="/python/">Python</a>
+</nav>
+
+
+<h1>The optgroup element</h1>
+<!-- The <optgroup> tag is used to group related options in a <select> element (drop-down list). If you have a long list of options, groups of related options are easier to handle for a user.-->
+<p>The optgroup tag is used to group related options in a drop-down list:</p>
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="man">Man</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+      <option value="BMW">BMW</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<h1>The option element</h1>
+<label for="cars">Choose a car:</label>
+<select id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+
+<h1>The output element</h1>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="50">
++<input type="number" id="b" value="25">
+=<output name="x" for="a b"></output>
+</form>
+<p><strong>Note:</strong> The output element is not supported in Edge 12 (or earlier).</p>
+
+<h1>The progress element</h1>
+<label for="file">Downloading progress:</label>
+<progress id="file" value="20" max="100"> 20% </progress>
+
+<h1>The s (no longer correct) element</h1>
+<p><s>Only 50 tickets left!</s></p>
+<p>SOLD OUT!</p>
+
+<h1>The sub and sup elements</h1>
+<p>This text contains <sub>subscript</sub> text.</p>
+<p>This text contains <sup>superscript</sup> text.</p>
+
+<h1>The u element</h1>
+<p>This is some <u>mispeled</u> text.</p>
+
+
+		</body>
+
+	</html>
